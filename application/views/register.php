@@ -62,6 +62,16 @@
                                         <?=form_error('password')?>
                                     </div>
                                     <div class="form-group">
+                                        <label>Type</label>
+                                        <select name="type" class="form-control">
+                                            <option value="">--SELECT--</option>
+                                            <option value="agent">Agent</option>
+                                            <option value="student">Student</option>
+                                        </select>
+                                        <?=form_error('type')?>
+                                    </div>
+
+                                    <div class="form-group">
                                         <label>Password</label>
                                         <input type="password" class="form-control" placeholder="Confirm Password" name="conpass">
                                         <?=form_error('conpass')?>

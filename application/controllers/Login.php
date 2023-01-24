@@ -87,7 +87,7 @@ class Login extends CI_Controller {
 				
 					
 					$d= array(
-						'type'=>'student',
+						'type'=>$this->input->post('type'),
 						'username' =>strtolower($this->input->post('username')),
     					'name' => $this->input->post('name'),					
     					'phone' => $this->input->post('pno'),	

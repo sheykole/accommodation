@@ -163,6 +163,7 @@
          <?php if($reviews!=''){ foreach ($reviews as $k) { 
           echo '<p>'.dbInfo('admin_m','username',$k->student_id,'name').' - '.date('d/m/Y H:i:s',strtotime($k->dateadded)).'  <blockquote>'.$k->description.'</blockquote></p>'; }?>
           <hr>
+          <?php } ?>
         <div class="col-sm-12 bottom40" id="message">
             <form class="callus" method="post">
               <input type="hidden" name="acc_id" value="<?=$list->acc_id?>">
@@ -183,7 +184,7 @@
               </div>
             </form>
           </div>
-        <?php } }?>
+        <?php  }?>
 
         <h2 class="text-uppercase bottom20">Contact Agent</h2>
         <div class="row">
